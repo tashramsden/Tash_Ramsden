@@ -1,0 +1,112 @@
+{% include "header.html" %}
+
+  <!-- Title -->
+
+  <section id="title">
+    <div class="container-fluid">
+
+      <div class="green-circle title-circle">
+        <h1 class="main-title">I'm Tash</h1>
+        <h3>an aspiring quantitative ecologist</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About/welcome -->
+
+  <section id="welcome" class="grey-box">
+    <div class="container-fluid">
+
+        <div class="row welcome">
+          <div class="col-lg-6">
+            <h2>Hi there</h2>
+            <p>My primary areas of interest are in the fields of ecology and
+            evolution. Increasingly, I am interested in the application of
+            computational methods to understand our natural world. Having
+            studied Natural Sciences at undergraduate level, I have an
+            interdisciplinary approach to problem solving. I am looking
+            forwards to beginning a master's degree at Imperial College London
+            in Compuational Methods in Ecology and Evolution this year.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="green-circle photo-circle">
+              <img src="{{url_for('static', filename='images/profilepic.jpg')}}" alt="tash-profile" id="profile-pic">
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </section>
+
+  <!-- Contents/info/cv+portfolio -->
+
+  <section id="info">
+    <div class="container-fluid">
+
+      <div class="row info">
+
+        <div class="col-lg-6">
+          <div class="grey-box bubble">
+            <div class="green-circle">
+              <h2 class="bubble-text cv">My CV</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div white-box>
+            <h2 class="grey-title">Ecology</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam
+              tempor orci eu lobortis. Tincidunt lobortis feugiat vivamus at augue
+              eget arcu dictum varius. Leo a diam sollicitudin tempor.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row info">
+
+        <div class="col-lg-6">
+          <div class="white-box">
+            <h2 class="grey-title">Data Science</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam
+              tempor orci eu lobortis. Tincidunt lobortis feugiat vivamus at augue
+              eget arcu dictum varius. Leo a diam sollicitudin tempor.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="grey-box bubble">
+            <div class="green-circle">
+              <h2 class="bubble-text portfolio">Portfolio</h2>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact me -->
+
+  <section id="contact">
+    <div class="container-fluid">
+
+      <div class="green-circle contact-circle">
+        <h1 class="contact-title">Contact Me</h1>
+        <div class="contact-text">
+          <p>natasha.ramsden18@gmail.com</p>
+          <p><a href="https://www.linkedin.com/in/natasha-ramsden-4b50b3169/">LinkedIn</a></p>
+          <p><a href="https://github.com/tashramsden">GitHub</a></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+{% include "footer.html" %}
