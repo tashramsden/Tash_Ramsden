@@ -1,4 +1,12 @@
+/*!
+ * for navbar!!!
+ * Start Bootstrap - Clean Blog v5.0.9 (https://startbootstrap.com/themes/clean-blog)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-clean-blog/blob/master/LICENSE)
+ */
 
+
+/* Text */
 
 body {
   font-family: 'Raleway', sans-serif;
@@ -7,34 +15,116 @@ body {
   color: #545454
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   color: #141414;
 }
 
+h1 {
+  position: relative;
+  font-size: 5rem;
+  line-height: 1.5;
+  margin-top: 30%;
+  margin-bottom: 0;
+  letter-spacing: 0.5rem;
+}
+
 h2 {
+  position: relative;
   font-size: 3rem;
   padding-bottom: 5%;
+  font-size: 3.5rem;
+  width: 150%;
+  letter-spacing: 0.5rem;
 }
 
 h3 {
+  font-size: 2.5rem;
+  color: #545454;
+  padding-bottom: 3%;
+}
+
+h4 {
   position: relative;
   font-size: 2.05rem;
-  width: 130%;
-  right: 15%;
+  width: 110%;
+  right: 5%;
 }
 
 p {
   line-height: 1.75;
+  margin-bottom: 0;
 }
 
+.white-heading {
+  color: #ffffff;
+}
+
+.welcome-text {
+  text-align: left;
+}
+
+.portfolio {
+  right: 27%;
+}
+
+.bubble-text {
+  right: 23%;
+  top: 27%;
+}
+.contact-title {
+  margin-top: 40%;
+  right: 24%;
+}
+
+.contact-text {
+  padding-top: 27%;
+}
+
+.contact-text p {
+  position: relative;
+  text-align: center;
+  line-height: 4;
+}
+.contact-text p:hover {
+  color: #a9bf04;
+}
+
+.contact-text a {
+  color: #545454;
+  text-decoration: none;
+}
+.contact-text a:hover {
+  color: #a9bf04;
+}
+
+
+/* Logo */
 
 .logo {
   height: 60px;
   width:60px;
  }
 
+
+/* Photo */
+
+.welcome-pic {
+  display: flex;
+  justify-content: center;
+}
+
+#profile-pic {
+  position: relative;
+  width: 80%;
+  border-radius: 50%;
+  border: 7px solid #a9bf04;
+  margin: auto;
+}
+
+
+/* Navbar */
 
 #mainNav {
   position: absolute;
@@ -46,119 +136,47 @@ p {
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0.05rem;
+  padding: 10px 10px;
+  color: #141414;
+}
+
+#mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
+  color: #a9bf04;
 }
 
 @media only screen and (min-width: 992px) {
   #mainNav {
     border-bottom: 1px solid transparent;
     background: transparent;
-  }
-  #mainNav .navbar-nav > li.nav-item > a {
-    padding: 10px 10px;
-    color: #141414;
-  }
-  #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-    color: #a9bf04;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  #mainNav {
     transition: background-color 0.2s;
+    /* Force Hardware Acceleration in WebKit */
     transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
   }
   #mainNav.is-fixed {
+    /* when the user scrolls down, hide the header right above the viewport */
     position: fixed;
     top: -90px;
     transition: transform 0.2s;
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.9);
   }
-  #mainNav.is-fixed .navbar-nav > li.nav-item > a {
-    color: #141414;
-  }
-  #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: #a9bf04;
-  }
   #mainNav.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
     transform: translate3d(0, 100%, 0);
   }
 }
 
 
-
-.main-title {
-  position: relative;
-  font-size: 5rem;
-  line-height: 1.5;
-  margin-top: 30%;
-  margin-bottom: 0;
-  letter-spacing: 0.5rem;
-}
-
-.grey-title {
-  color: #545454;
-  font-size: 2.5rem;
-}
-
-.bubble-text {
-  position: relative;
-  font-size: 4rem;
-  width: 150%;
-  right: 23%;
-  top: 27%;
-  letter-spacing: 0.5rem;
-}
-
-.portfolio {
-  right: 35%;
-}
-
-.contact-title {
-  position: relative;
-  font-size: 3.5rem;
-  letter-spacing: 0.5rem;
-  width: 150%;
-  margin-top: 17%;
-  right: 24%;
-}
-
-
-.contact-text {
-  padding-top: 3%;
-}
-
-.contact-text p {
-  position: relative;
-  text-align: right;
-  right: 2%;
-  line-height: 2;
-  margin-bottom: 0;
-}
-
-.contact-text a {
-  color: #545454;
-  text-decoration: none;
-}
-
-.container-fluid.copyright-strip {
-  padding: 1%;
-}
-
-
+/* Containers */
 
 .container-fluid {
-  padding: 4% 10%;
+  padding: 10% 10%;
 }
 
 .grey-box{
   background-color: #545454;
   color: #ffffff
-}
-
-.grey-box h2 {
-  color: #ffffff;
 }
 
 .bubble {
@@ -170,12 +188,8 @@ p {
   margin: 5% auto;
 }
 
-.row.welcome {
-  padding-top: 2%;
-}
-
-.row.info {
-  padding-top: 8%;
+.lower-info {
+  padding-top: 10%;
 }
 
 .col-lg-6 {
@@ -183,7 +197,12 @@ p {
   padding-right: 4%;
 }
 
+.container-fluid.copyright-strip {
+  padding: 1%;
+}
 
+
+/* Green circles */
 
 .green-circle {
   height: 200px;
@@ -198,44 +217,152 @@ p {
 }
 
 .title-circle {
-  width: 50%;
-  padding-bottom: 47%;
+  width: 45%;
+  padding-bottom: 43%;
   margin: 2.5% auto;
   border-width: 10px;
   margin-bottom: 10%;
 }
 
-.nav-circle {
-  height: auto;
-  width: 60px;
-}
-
-.photo-circle {
-  width: 70%;
-  padding-bottom: 70%;
-  margin: auto;
-}
-
 .contact-circle {
-  width: 40%;
-  padding-bottom: 38%;
-  margin: 2.5% 15%;
+  width: 80%;
+  padding-bottom: 78%;
   border-width: 10px;
   margin-bottom: 10%;
+  background-color: white;
 }
 
-
-#welcome {
-  text-align: left;
-}
-
-#profile-pic {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-}
+/* Info section specific */
 
 #info {
   padding-top: 3%;
 }
+
+.show-cv-above {
+  display: block;
+}
+.show-cv-below {
+  display: none;
+}
+
+
+/* Contact section specific */
+#contact .container-fluid{
+  padding: 1% 10%;
+}
+
+#f1_container {
+  position: relative;
+  margin: 10px auto;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+}
+.face {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.face.back {
+  transform: rotateY(180deg);
+  z-index: 4;
+  frontface-visibility: hidden;
+}
+
+
+/* Responsive - smaller laptop/tablet size */
+
+@media (max-width: 992px) {
+/* This will change when viewport is 992px or less */
+  .container-fluid {
+    padding: 10% 25%;
+  }
+  .title-circle {
+    width: 55%;
+    padding-bottom: 52%;
+    margin: 15% auto;
+  }
+  h1 {
+    font-size: 4rem;
+    margin-top: 30%;
+  }
+  h2{
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.55rem;
+    width: 110%;
+    right: 4.7%;
+  }
+  #profile-pic {
+    width: 60%;
+    margin-top: 5%;
+  }
+  .show-cv-below {
+    display: block;
+  }
+  .show-cv-above {
+    display: none;
+  }
+  .lower-info {
+    padding-top: 0;
+  }
+  .info-block {
+    margin: 10% auto;
+  }
+  .info-circle {
+    height: 160px;
+    width: 160px;
+  }
+  .bubble-text {
+    right: 23%;
+    top: 31%;
+  }
+  .portfolio {
+    right: 28%;
+  }
+  .contact-circle {
+    width: 70%;
+    padding-bottom: 68%;
+  }
+
+}
+
+@media (max-width: 770px) {
+  .title-circle {
+    margin: 18% auto;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-top: 30%;
+  }
+  h4 {
+    font-size: 1.1rem;
+    width: 110%;
+    right: 4.7%;
+  }
+
+}
+
+
+
+/* Responsive - phone size */
+

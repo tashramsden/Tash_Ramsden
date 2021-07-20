@@ -3,11 +3,11 @@
   <!-- Title -->
 
   <section id="title">
-    <div class="container-fluid">
+    <div class="container">
 
       <div class="green-circle title-circle">
         <h1 class="main-title">I'm Tash</h1>
-        <h3>an aspiring quantitative ecologist</h3>
+        <h4>a student of quantitative ecology</h4>
       </div>
 
     </div>
@@ -18,24 +18,22 @@
   <section id="welcome" class="grey-box">
     <div class="container-fluid">
 
-        <div class="row welcome">
-          <div class="col-lg-6">
-            <h2>Hi there</h2>
-            <p>My primary areas of interest are in the fields of ecology and
+      <div class="row">
+        <div class="col-lg-6 welcome-text">
+          <h3 class="white-heading">Hi there</h3>
+          <p>My primary areas of interest are in the fields of ecology and
             evolution. Increasingly, I am interested in the application of
-            computational methods to understand our natural world. Having
-            studied Natural Sciences at undergraduate level, I have an
+            computational methods to understand our natural world. <br><br>
+            Having studied Natural Sciences at undergraduate level, I have an
             interdisciplinary approach to problem solving. I am looking
             forwards to beginning a master's degree at Imperial College London
-            in Compuational Methods in Ecology and Evolution this year.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <div class="green-circle photo-circle">
-              <img src="{{url_for('static', filename='images/profilepic.jpg')}}" alt="tash-profile" id="profile-pic">
-            </div>
-          </div>
+            in Computational Methods in Ecology and Evolution this year. <br><br>
+          </p>
         </div>
+        <div class="col-lg-6 welcome-pic">
+            <img src="{{url_for('static', filename='images/profilepic.JPG')}}" alt="tash-profile" id="profile-pic">
+        </div>
+      </div>
 
     </div>
   </section>
@@ -47,31 +45,39 @@
 
       <div class="row info">
 
-        <div class="col-lg-6">
-          <div class="grey-box bubble">
-            <div class="green-circle">
-              <h2 class="bubble-text cv">My CV</h2>
+        <div class="col-lg-6 show-cv-above">
+          <div class="grey-box bubble info-block">
+            <div class="green-circle info-circle">
+              <h2 class="bubble-text cv white-heading">My CV</h2>
             </div>
           </div>
         </div>
 
         <div class="col-lg-6">
-          <div white-box>
-            <h2 class="grey-title">Ecology</h2>
+          <div class="white-box info-block">
+            <h3 class="grey-title">Ecology</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam
               tempor orci eu lobortis. Tincidunt lobortis feugiat vivamus at augue
               eget arcu dictum varius. Leo a diam sollicitudin tempor.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 show-cv-below">
+          <div class="grey-box bubble info-block">
+            <div class="green-circle info-circle">
+              <h2 class="bubble-text cv white-heading">My CV</h2>
+            </div>
           </div>
         </div>
 
       </div>
 
-      <div class="row info">
+      <div class="row info lower-info">
 
         <div class="col-lg-6">
-          <div class="white-box">
-            <h2 class="grey-title">Data Science</h2>
+          <div class="white-box info-block">
+            <h3 class="grey-title">Data Science</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Etiam
               tempor orci eu lobortis. Tincidunt lobortis feugiat vivamus at augue
@@ -80,13 +86,12 @@
         </div>
 
         <div class="col-lg-6">
-          <div class="grey-box bubble">
-            <div class="green-circle">
-              <h2 class="bubble-text portfolio">Portfolio</h2>
+          <div class="grey-box bubble info-block">
+            <div class="green-circle info-circle">
+              <h2 class="bubble-text portfolio white-heading">Portfolio</h2>
             </div>
           </div>
         </div>
-
       </div>
 
     </div>
@@ -94,19 +99,37 @@
 
   <!-- Contact me -->
 
-  <section id="contact">
-    <div class="container-fluid">
+<!--  <section id="contact">-->
+<!--    <div class="container-fluid">-->
 
-      <div class="green-circle contact-circle">
-        <h1 class="contact-title">Contact Me</h1>
-        <div class="contact-text">
-          <p>natasha.ramsden18@gmail.com</p>
-          <p><a href="https://www.linkedin.com/in/natasha-ramsden-4b50b3169/">LinkedIn</a></p>
-          <p><a href="https://github.com/tashramsden">GitHub</a></p>
+<!--      <div class="green-circle contact-circle">-->
+<!--        <h2 class="contact-title">Contact Me</h2>-->
+<!--        <div class="contact-text">-->
+<!--          <p>natasha.ramsden18@gmail.com</p>-->
+<!--          <p><a href="https://www.linkedin.com/in/natasha-ramsden-4b50b3169/">LinkedIn</a></p>-->
+<!--          <p><a href="https://github.com/tashramsden">GitHub</a></p>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--    </div>-->
+<!--  </section>-->
+
+<div id="f1_container">
+<div id="f1_card">
+  <div class="front face">
+            <div class="green-circle contact-circle shadow">
+          <h2 class="contact-title hide">Contact Me</h2>
         </div>
-      </div>
-
-    </div>
-  </section>
+  </div>
+  <div class="back face center">
+    <div class="green-circle contact-circle shadow">
+<div class="contact-text">
+          <p>natasha.ramsden18@gmail.com</p>
+          <p><a href="https://www.linkedin.com/in/natasha-ramsden-4b50b3169/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+          <p><a href="https://github.com/tashramsden" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </div>        </div>
+  </div>
+</div>
+</div>
 
 {% include "footer.html" %}
