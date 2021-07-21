@@ -7,7 +7,7 @@ import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
-ckeditor = CKEditor(app)
+# ckeditor = CKEditor(app)
 Bootstrap(app)
 
 # pass current year to all routes for footer
@@ -17,6 +17,11 @@ current_year = datetime.now().year
 @app.route('/')
 def home():
     return render_template("index.html", current_year=current_year)
+
+
+@app.route('/portfolio')
+def portfolio():
+    return render_template("portfolio.html", current_year=current_year)
 
 
 if __name__ == "__main__":

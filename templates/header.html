@@ -61,6 +61,23 @@
       }
 
     })(jQuery); // End of use strict
+
+    function copy(that){  // function for copying text to clipboard on click
+    var inp =document.createElement('input');
+    document.body.appendChild(inp)
+    inp.value =that.textContent
+    inp.select();
+    document.execCommand('copy',false);
+    inp.remove();
+    };  // end of copy
+
+
+    // When the user clicks on email in contact section, open the popup
+    function popupFunc() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+
   </script>
 
   <!-- CSS style sheets (Bootstrap 5 and styles.css)-->
@@ -80,7 +97,7 @@
 
     <div class="container">
 
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="{{url_for('home')}}#title">
         <img src="{{url_for('static', filename='images/logo.png')}}" alt="TR" class="logo">
       </a>
 
@@ -91,19 +108,19 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="{{url_for('home')}}#title">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="{{url_for('home')}}#welcome">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CV</a>
+            <a class="nav-link" href="{{url_for('static', filename='cvs/cv.html')}}" target="_blank" rel="noopener noreferrer">CV</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="{{url_for('portfolio')}}">Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="{{url_for('home')}}#contact">Contact</a>
           </li>
         </ul>
       </div>
