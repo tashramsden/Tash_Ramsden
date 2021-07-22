@@ -14,4 +14,30 @@
   </section>
 
 
+  <!-- Portfolio Projects -->
+
+  <section id="projects">
+    <div class="container-fluid">
+
+      {% for project in all_projects %}
+
+        <div class="row project-row">
+          <div class="col-lg-6">
+              <a href="{{project.link}}">
+                <div class="project-bubble container">
+                    <img src="{{project.img_url}}" alt="project-img" class="project-img">
+                    <h3 class="project-title">{{project.title}}</h3>
+                </div>
+              </a>
+          </div>
+          <div class="col-lg-6 project-desc-section">
+              <p class="project-description">{{project.description}}</p>
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+  </section>
+
 {% include "footer.html" %}
+
+
