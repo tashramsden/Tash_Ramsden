@@ -21,6 +21,7 @@
   <script src="https://code.jquery.com/jquery-latest.js"></script>
 
   <script type="text/javascript">
+
     (function($) {
       "use strict"; // Start of use strict
 
@@ -62,14 +63,16 @@
       }
     })(jQuery); // End of use strict
 
-    function copy(that){  // function for copying text to clipboard on click
+
+    // function for copying text to clipboard on click
+    function copyEmail() {
       var inp =document.createElement('input');
       document.body.appendChild(inp)
-      inp.value =that.textContent
+      inp.value ="natasha.ramsden18@gmail.com"
       inp.select();
       document.execCommand('copy',false);
       inp.remove();
-    };  // end of copy
+    };
 
 
     // When the user clicks on email in contact section, open the popup
