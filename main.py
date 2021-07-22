@@ -1,6 +1,5 @@
 from flask import Flask, render_template, redirect, url_for
 from flask_bootstrap import Bootstrap
-from flask_ckeditor import CKEditor
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 import os
@@ -8,7 +7,6 @@ import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
-# ckeditor = CKEditor(app)
 Bootstrap(app)
 
 # CONNECT TO DB

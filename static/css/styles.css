@@ -206,6 +206,12 @@ a {
   padding-right: 4%;
 }
 
+.tutor-block {
+  padding-top: 5%;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
 .container-fluid.copyright-strip {
   padding: 1%;
 }
@@ -417,7 +423,10 @@ a {
     width: 70%;
     padding-bottom: 68%;
   }
-
+  .tutor-block {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 /* Responsive - tablet */
