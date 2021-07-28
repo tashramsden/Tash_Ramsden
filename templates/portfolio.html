@@ -19,7 +19,7 @@
   <section id="projects">
     <div class="container-fluid">
 
-      {% for project in all_projects %}
+      {% for project in all_projects[::-1] %}
 
         <div class="row project-row">
           <div class="col-lg-6">
